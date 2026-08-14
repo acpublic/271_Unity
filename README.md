@@ -24,3 +24,10 @@ root@c1630e8588aa:/home/dev_ws# ros2 run ros_tcp_endpoint default_server_endpoin
 - New project
 - テンプレート「Get Started With Unity」
 - Create project
+### ROS2通信用セットアップ
+- メニュー内の「window」->「Package Management」->「Package Manager」
+- 「+」ボタン ->「Install package from git URL ...」
+- 以下を入力し、「install」ボタンをクリック
+```
+https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
+```
