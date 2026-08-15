@@ -67,3 +67,8 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 \\wsl.localhost\Ubuntu/home/user_name/unity_dev/Unity-Robotics-Hub/tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs
 ```
 - 「Build 2 srvs」と「Build 2 msgs」をクリック
+### Publisherによるデモ動作確認
+- 「Assets」->「SourceFiles」->「Scripts」を開いた状態で、「RosPublisherExample」という空のファイルを追加
+- 「Create」->「Scripting」->「Empty C# Script」をクリック、空のファイルを作成。ファイル名を"RosPublisherExample"に変更
+- ファイルが開き、中身を消して、Unity-Robotics-Hubのドキュメントに記載されているRosPublisherExample.csのコードを記載して保存
+
