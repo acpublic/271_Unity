@@ -1,6 +1,6 @@
-## 環境構築
+# 環境構築
 - https://qiita.com/siruku6/items/a556b63cd3e840ab9961
-### Unityインストール
+## Unityインストール
 - https://unity.com/ja
 ### Unity基礎セットアップ
 - Unity Editorインストール
@@ -32,7 +32,7 @@ root@c1630e8588aa:/home/dev_ws# ros2 run ros_tcp_endpoint default_server_endpoin
 ```
 https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
 ```
-### ROS通信の設定
+## ROS通信の設定
 - 「Robotics」->「ROS Settings」
 - 「Protocol」を「ROS2」に変更
 ### デモによる動作確認
@@ -78,3 +78,15 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 ### C#ソースをCubeオブジェクトにアタッチ
 - 「Project」タブにある「RosPublisherExample」を「Inspector」タブの中のCubeの属性欄までドラッグ&ドロップ
 - 「Hierarchy」タブの中のCubeを、追加した「Ros Publisher Example」の中のCubeと書かれた入力フォーム（None と表示されている）までドラッグ&ドロップ
+
+### ゲーム起動と通信結果の確認
+- Unityのプログラムウィンドウの上部中央にある、「▶」マークのボタンをクリック
+- 起動していたWSL側の標準出力
+```
+root@e960f81518b9:/home/dev_ws# ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
+```
+- Docker コンテナ内にいるターミナルでコマンド実行
+```
+source install/setup.bash
+ros2 topic echo pos_rot
+```
