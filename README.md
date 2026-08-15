@@ -66,4 +66,4 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 ```
 \\wsl.localhost\Ubuntu/home/user_name/unity_dev/Unity-Robotics-Hub/tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs
 ```
-
+- 「Build 2 srvs」と「Build 2 msgs」をクリック
