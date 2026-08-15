@@ -67,8 +67,14 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 \\wsl.localhost\Ubuntu/home/user_name/unity_dev/Unity-Robotics-Hub/tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs
 ```
 - 「Build 2 srvs」と「Build 2 msgs」をクリック
-### Publisherによるデモ動作確認
+## Publisherによるデモ動作確認
+### C#ソースコードの作成
 - 「Assets」->「SourceFiles」->「Scripts」を開いた状態で、「RosPublisherExample」という空のファイルを追加
 - 「Create」->「Scripting」->「Empty C# Script」をクリック、空のファイルを作成。ファイル名を"RosPublisherExample"に変更
 - ファイルが開き、中身を消して、Unity-Robotics-Hubのドキュメントに記載されているRosPublisherExample.csのコードを記載して保存
-
+### 回転体オブジェクトの追加
+- 「+」ボタンを押下し、「3D Object」->「Cube」
+- 「+」ボタン ->「Create Empty」の順にをクリックし、オブジェクトの名前を"RosPublisher"
+### C#ソースをCubeオブジェクトにアタッチ
+- 「Project」タブにある「RosPublisherExample」を「Inspector」タブの中のCubeの属性欄までドラッグ&ドロップ
+- 「Hierarchy」タブの中のCubeを、追加した「Ros Publisher Example」の中のCubeと書かれた入力フォーム（None と表示されている）までドラッグ&ドロップ
