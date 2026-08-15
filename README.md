@@ -59,3 +59,6 @@ root@e960f81518b9:/home/dev_ws#
 root@e960f81518b9:/home/dev_ws# colcon build
 root@e960f81518b9:/home/dev_ws# source install/setup.bash
 ```
+- source install/setup.bashを実行しても何も起きない
+- 「Robotics」->「Generate ROS Messages..」
+- 「ROS message path」の部分にWSLの中にあるディレクトリである、"tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs"ディレクトリへのフルパスを記載
