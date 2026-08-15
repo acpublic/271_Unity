@@ -31,3 +31,30 @@ root@c1630e8588aa:/home/dev_ws# ros2 run ros_tcp_endpoint default_server_endpoin
 ```
 https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
 ```
+### ROS通信の設定
+- 「Robotics」->「ROS Settings」
+- 「Protocol」を「ROS2」に変更
+### デモによる動作確認
+```
+# Dockerfile のあるディレクトリへ移動
+$ cd Unity-Robotics-Hub/tutorials/ros_unity_integration
+
+# ----------- 1. Docker コンテナを起動する（起動前の場合） -----------
+$ docker run -it --rm -p 10000:10000 foxy /bin/bash
+
+# ----------- 2. Docker コンテナ内へアクセスする（起動済の場合） -----------
+# 起動されているコンテナ名を確認
+$ docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                           NAMES
+e960f81518b9   foxy      "/ros_entrypoint.sh …"   4 minutes ago   Up 3 minutes   0.0.0.0:10000->10000/tcp, :::10000->10000/tcp   hardcore_johnson
+
+# 確認した Name のコンテナへアクセス
+$ docker exec -it hardcore_johnson /bin/bash
+
+# 結果
+root@e960f81518b9:/home/dev_ws# 
+```
+```
+root@e960f81518b9:/home/dev_ws# colcon build
+root@e960f81518b9:/home/dev_ws# source install/setup.bash
+```
