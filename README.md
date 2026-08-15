@@ -72,6 +72,7 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 - 「Assets」->「SourceFiles」->「Scripts」を開いた状態で、「RosPublisherExample」という空のファイルを追加
 - 「Create」->「Scripting」->「Empty C# Script」をクリック、空のファイルを作成。ファイル名を"RosPublisherExample"に変更
 - ファイルが開き、中身を消して、Unity-Robotics-Hubのドキュメントに記載されているRosPublisherExample.csのコードを記載して保存
+-> https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/publisher.md#create-unity-publisher
 ### 回転体オブジェクトの追加
 - 「+」ボタンを押下し、「3D Object」->「Cube」
 - 「+」ボタン ->「Create Empty」の順にをクリックし、オブジェクトの名前を"RosPublisher"
