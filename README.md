@@ -53,7 +53,7 @@ e960f81518b9   foxy      "/ros_entrypoint.sh …"   4 minutes ago   Up 3 minutes
 $ docker exec -it hardcore_johnson /bin/bash
 
 # 結果
-root@e960f81518b9:/home/dev_ws# 
+root@e960f81518b9:/home/dev_ws#
 ```
 ```
 root@e960f81518b9:/home/dev_ws# colcon build
@@ -62,3 +62,8 @@ root@e960f81518b9:/home/dev_ws# source install/setup.bash
 - source install/setup.bashを実行しても何も起きない
 - 「Robotics」->「Generate ROS Messages..」
 - 「ROS message path」の部分にWSLの中にあるディレクトリである、"tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs"ディレクトリへのフルパスを記載
+- フォルダ選択例
+```
+\\wsl.localhost\Ubuntu/home/user_name/unity_dev/Unity-Robotics-Hub/tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs
+```
+
